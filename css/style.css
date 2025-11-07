@@ -1,11 +1,10 @@
-/* ✅ BASIC RESET */
+/* RESET */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
     overflow: hidden;
     font-family: sans-serif;
@@ -15,7 +14,6 @@ body {
     background: url("../img.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -34,11 +32,11 @@ body {
     display: grid;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
-    background: rgba(255,255,255,0.12);
+    background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(12px);
-    border: 2px solid rgba(255,255,255,0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 22px;
-    box-shadow: 0 0 40px rgba(0,0,0,0.45), inset 0 0 25px rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.45), inset 0 0 25px rgba(255, 255, 255, 0.1);
     position: fixed;
     top: 85px;
     left: 50%;
@@ -58,13 +56,13 @@ body {
     z-index: 999;
     backdrop-filter: blur(12px);
     background: rgba(255, 255, 255, 0.15);
-    border-bottom: 2px solid rgba(255,255,255,0.3);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 #topBar button {
     padding: 8px 16px;
-    background: rgba(255,255,255,0.25);
-    border: 2px solid rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 12px;
     font-size: 16px;
     font-weight: bold;
@@ -75,17 +73,17 @@ body {
 
 #topBar button:hover {
     transform: scale(1.13);
-    box-shadow: 0 0 10px rgba(255,255,255,0.8);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 body.dark #topBar {
-    background: rgba(0,0,0,0.55);
-    border-color: rgba(255,255,255,0.2);
+    background: rgba(0, 0, 0, 0.55);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 body.dark #topBar button {
-    background: rgba(255,0,0,0.25);
-    border-color: rgba(255,0,0,0.6);
+    background: rgba(255, 0, 0, 0.25);
+    border-color: rgba(255, 0, 0, 0.6);
     color: white;
 }
 
@@ -119,8 +117,13 @@ body.dark #highScoreBox {
     box-shadow: inset 0 0 4px #000;
 }
 
-.head::before { left: 8%; }
-.head::after { right: 8%; }
+.head::before {
+    left: 8%;
+}
+
+.head::after {
+    right: 8%;
+}
 
 .head::before::after,
 .head::after::after {
@@ -153,13 +156,13 @@ body.dark .head {
 }
 
 body.dark .head::before,
-body.dark .head::after {
+.head::after {
     background: #ffcccc;
     border-color: #600000;
 }
 
 body.dark .head::before::after,
-body.dark .head::after::after {
+.head::after::after {
     background: #8b0000;
 }
 
@@ -167,13 +170,13 @@ body.dark .head::after::after {
 .snake {
     background: linear-gradient(135deg, #6a00ff, #b380ff);
     border-radius: 12px;
-    border: 2px solid rgba(255,255,255,0.4);
-    box-shadow: 0 0 12px rgba(90,0,255,0.8), inset 0 0 8px rgba(255,255,255,0.4);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 12px rgba(90, 0, 255, 0.8), inset 0 0 8px rgba(255, 255, 255, 0.4);
 }
 
 body.dark .snake {
     background: linear-gradient(135deg, #ff0044, #ff6680);
-    box-shadow: 0 0 15px rgba(255, 40, 40,0.9), inset 0 0 10px rgba(255,255,255,0.25);
+    box-shadow: 0 0 15px rgba(255, 40, 40, 0.9), inset 0 0 10px rgba(255, 255, 255, 0.25);
 }
 
 /* FOOD */
@@ -181,7 +184,7 @@ body.dark .snake {
     background: radial-gradient(circle at 30% 30%, #ffb07c, #c65d24);
     border-radius: 50%;
     position: relative;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.4), 0 0 15px rgba(255,120,60,0.7);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 120, 60, 0.7);
 }
 
 .food::after {
@@ -224,30 +227,43 @@ body.dark .snake {
     height: 60px;
     border-radius: 15px;
     font-size: 24px;
-    background: rgba(255,255,255,0.25);
-    border: 2px solid rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.5);
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transition: 0.2s;
 }
 
 #mobileControls button:active {
     transform: scale(0.9);
-    background: rgba(255,255,255,0.4);
+    background: rgba(255, 255, 255, 0.4);
 }
 
-@media screen and (max-width:600px){
-    #board{
+@media screen and (max-width:600px) {
+    #board {
         width: 95vw;
         height: 95vw;
         top: 70px;
     }
-    #topBar{
+
+    #topBar {
         flex-direction: column;
         gap: 5px;
         padding: 8px;
     }
-    #topBar h2{font-size:16px;}
-    #topBar button{font-size:14px;padding:6px 12px;}
-    #mobileControls{display:flex;flex-wrap:wrap;justify-content:center;}
+
+    #topBar h2 {
+        font-size: 16px;
+    }
+
+    #topBar button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    #mobileControls {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
