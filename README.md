@@ -1,44 +1,86 @@
-# Snake-Game 🐍
+# 🐍 Snake Game - The Real FUN
 
-Simple, addictive Snake game built with plain HTML, CSS and JavaScript.  
-Play in your browser — eat food, grow the snake, avoid hitting walls & yourself. Includes sound effects for food, move and game over.
-
----
-
-## ▶️ Live Demo
-**Play the game online for free:**  
-[Click here to play Snake-Game](https://snakegameharish.vercel.app/)
+Welcome to **Snake Game**! A modern, responsive version of the classic Snake game built with **HTML, CSS, and JavaScript**. Play on desktop, tablet, or mobile devices!
 
 ---
 
-## 🔥 Features & Notes
-- Pure HTML / CSS / JavaScript — no build tools required.  
-- Sound effects for eating, moving and game over (works best when served over HTTP).  
-- Smooth controls using arrow keys (works on desktop).  
-- Simple scoring and restart — press any key to start or restart.  
-- Lightweight and fast — good for learning game loops and basic collision detection.  
-- Mobile: basic support, but touch controls are not implemented (touch support can be added as an improvement).  
-- Audio: Browsers may block autoplay; click on the page if audio doesn't play immediately.  
-- Performance: If audio causes delay on local file open, run a local server (see Run Locally section).
+## 🎮 Play Online
+
+Click the link below to play the game instantly:
+
+[Play Snake Game](https://snakegameharish.vercel.app/)
 
 ---
 
-## 🕹️ How to Play
-- Use arrow keys to move the snake (Up / Down / Left / Right).  
-- Eat the food to grow and score points.  
-- If snake hits wall or itself — game over.  
-- Press any key to start/restart the game.
+## 🌟 Features
+
+- Classic Snake gameplay with a modern look.
+- Smooth **music and sound effects** 🎵.
+- **Dark mode** toggle 🌙 / Light mode ☀️.
+- **High Score tracking** (saved in your browser).
+- **Mobile-friendly controls**:
+  - Arrow buttons appear on mobile for easy touch control.
+- Responsive design — works on all screen sizes.
 
 ---
 
-## 🛠️ Run Locally (quick)
-**Option A — open directly (no server needed)**  
-1. Download/clone the repo.  
-2. Open `index.html` in your browser (double click).
+## 🖥️ Desktop Controls
 
-**Option B — run a local HTTP server (recommended for correct audio behavior)**  
-Using Python 3:
-```bash
-# from inside the project folder
-python -m http.server 5500
-# then open http://localhost:5500 in browser
+- Use **Arrow keys** to move the snake.
+- Toggle **Music** and **Dark Mode** from the top bar.
+- Adjust **volume** with the slider.
+
+---
+
+## 📱 Mobile Controls
+
+- Touch **Up, Down, Left, Right buttons** at the bottom to control the snake.
+- Music & Dark Mode buttons at top.
+- Play in **portrait mode** for the best experience.
+
+---
+
+## ⚡ How to Run Locally
+
+1. **Clone the repo**:
+    ```bash
+    git clone https://github.com/Harishmaru1/Snake-Game.git
+    ```
+2. **Navigate to the folder**:
+    ```bash
+    cd Snake-Game
+    ```
+3. **Open `index.html`** in your browser.
+4. Enjoy playing locally or deploy it online using **Vercel, Netlify, or GitHub Pages**.
+
+---
+
+## 📦 Deployment
+
+I have already deployed it on **Vercel**:
+
+- **Link:** [https://snakegameharish.vercel.app/](https://snakegameharish.vercel.app/)
+
+Your friends can also **click the link and play instantly** without downloading anything.
+
+---
+
+## 👨‍💻 Technologies Used
+
+- HTML5
+- CSS3 (Responsive + Mobile-friendly)
+- JavaScript (ES6)
+- Local Storage for High Score
+- Audio effects for music, food, and game over sounds
+
+---
+
+## 💡 Notes
+
+- Best played in **modern browsers** (Chrome, Firefox, Edge, Safari).
+- On mobile, make sure **touch buttons** are visible at the bottom for easy gameplay.
+- High Score is **saved locally** in your browser.
+
+---
+
+Enjoy the game and have fun! 🎉
