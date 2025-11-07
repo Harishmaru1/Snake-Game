@@ -1,4 +1,3 @@
-
 # Snake-Game 🐍
 
 Simple, addictive Snake game built with plain HTML, CSS and JavaScript.  
@@ -7,22 +6,20 @@ Play in your browser — eat food, grow the snake, avoid hitting walls & yoursel
 ---
 
 ## ▶️ Live Demo
-**Vercel / GitHub Pages live link (replace with your deployed URL):**
-
-- Vercel (recommended): `https://your-vercel-url.vercel.app`  
-  Example placeholder: `https://snake-game.vercel.app`
-
-- GitHub Pages: `https://Harishmaru1.github.io/Snake-Game/`
-
-> Click to play: [Play Live Demo](https://Harishmaru1.github.io/Snake-Game/)  
-> (Replace the URL above once you have your actual Vercel/GitHub-Pages URL.)
+**Play the game online for free:**  
+[Click here to play Snake-Game](https://snakegameharish.vercel.app/)
 
 ---
 
-## 📸 Preview
-*(Add a screenshot or GIF here — place `screenshot.png` in repo and use below markdown)*
-
-![Game Preview](screenshot.png)
+## 🔥 Features & Notes
+- Pure HTML / CSS / JavaScript — no build tools required.  
+- Sound effects for eating, moving and game over (works best when served over HTTP).  
+- Smooth controls using arrow keys (works on desktop).  
+- Simple scoring and restart — press any key to start or restart.  
+- Lightweight and fast — good for learning game loops and basic collision detection.  
+- Mobile: basic support, but touch controls are not implemented (touch support can be added as an improvement).  
+- Audio: Browsers may block autoplay; click on the page if audio doesn't play immediately.  
+- Performance: If audio causes delay on local file open, run a local server (see Run Locally section).
 
 ---
 
